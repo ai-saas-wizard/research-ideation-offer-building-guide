@@ -1,0 +1,5 @@
+# Your own course work stays on your computer. Git ignores it, so it is never uploaded and course updates never touch it.
+/0*/
+/course-progress.md
+*.zip
+.DS_Store

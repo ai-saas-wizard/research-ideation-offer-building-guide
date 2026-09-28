@@ -1,0 +1,4 @@
+interface:
+  display_name: "S08 Legal and Setup Check"
+  short_description: "Lesson 08 legal and setup checklist before you take money"
+  default_prompt: "Use $s08-legal-check with my R01-R07 files to walk me through Lesson 08 and create my R08-legal-checklist.md."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "S04 Ideal Customer Profile"
+  short_description: "Lesson 04 evidence-based ICP from your R01-R03"
+  default_prompt: "Use $s04-ideal-customer-profile with my R01-R03 files to walk me through Lesson 04 and create my R04-ICP.md."

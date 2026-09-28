@@ -1,0 +1,4 @@
+interface:
+  display_name: "S01 Analyze Your Expertise"
+  short_description: "Lesson 01 interview that builds your capability brief"
+  default_prompt: "Use $s01-analyze-your-expertise to walk me through Lesson 01 and create my R01-capability-brief.md."

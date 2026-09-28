@@ -1,0 +1,4 @@
+interface:
+  display_name: "S06 Offer, Pricing and Workload"
+  short_description: "Lesson 06 offer levels, workload maths, and prices to try"
+  default_prompt: "Use $s06-offer-pricing-workload with my R03, R04 and R05 to walk me through Lesson 06 and create my R06-offer-plan.md."

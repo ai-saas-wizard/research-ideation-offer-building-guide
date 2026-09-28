@@ -1,0 +1,4 @@
+interface:
+  display_name: "S03 Competitor Analysis"
+  short_description: "Lesson 03 competitor and funnel comparison"
+  default_prompt: "Use $s03-competitor-analysis with my R02-market-research-report.md to walk me through Lesson 03 and create my R03-competitor-analysis.md."

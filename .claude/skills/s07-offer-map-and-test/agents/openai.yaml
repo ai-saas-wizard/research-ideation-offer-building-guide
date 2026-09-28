@@ -1,0 +1,4 @@
+interface:
+  display_name: "S07 Offer Map and Test"
+  short_description: "Lesson 07 offer map, small real test, and test log"
+  default_prompt: "Use $s07-offer-map-and-test with my R04, R05, R06 and R03 notes to walk me through Lesson 07 and create my R07-offer-schematic-and-test-log.md."

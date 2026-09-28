@@ -1,0 +1,4 @@
+interface:
+  display_name: "S05 Outcome and Boundaries"
+  short_description: "Lesson 05 outcome and boundary brief from your R04"
+  default_prompt: "Use $s05-outcome-and-boundaries with my R04-ICP.md to walk me through Lesson 05 and create my R05-outcome-and-boundary-brief.md."
