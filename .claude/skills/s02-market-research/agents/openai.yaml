@@ -1,4 +1,4 @@
 interface:
   display_name: "S02 Market Research"
-  short_description: "Lesson 02 research brief, approval, and market report"
+  short_description: "Lesson 02 research brief, deep research prompt, and report"
   default_prompt: "Use $s02-market-research with my R01-capability-brief.md to walk me through Lesson 02 and create my R02-research-brief.md."

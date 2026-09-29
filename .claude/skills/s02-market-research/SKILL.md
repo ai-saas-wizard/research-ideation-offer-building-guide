@@ -1,6 +1,6 @@
 ---
 name: s02-market-research
-description: Use when a learner is on Lesson 02 (Section 2) of the "Research, Ideation & Offer-Building Guide" course, has an R01-capability-brief.md and wants to plan or run market research, asks for R02-research-brief.md or R02-market-research-report.md, or says they approve their research brief.
+description: Use when a learner is on Lesson 02 (Section 2) of the "Research, Ideation & Offer-Building Guide" course, has an R01-capability-brief.md and wants to plan or run market research, asks for R02-research-brief.md, R02-deep-research-prompt.md, or R02-market-research-report.md, says they approve their research brief, or wants their deep research prompt run again.
 ---
 
 # S02: Prepare Your Market Research
@@ -8,7 +8,7 @@ description: Use when a learner is on Lesson 02 (Section 2) of the "Research, Id
 Lesson 02 has two stages with a hard stop between them:
 
 1. Interview the learner and write `R02-research-brief.md`. Show it. **Stop.**
-2. Only after the learner has read the brief and explicitly approved it, run the research and write `R02-market-research-report.md`.
+2. Only after the learner has read the brief and explicitly approved it: turn it into `R02-deep-research-prompt.md`, run that prompt with a research sub-agent, check what comes back, and save `R02-market-research-report.md`.
 
 The brief tells the research what it is supposed to help the learner decide. A vague request such as "research the market for photography coaching" returns general statistics, popular competitors, and broad customer categories with little connection to what the learner can actually help with.
 
@@ -16,7 +16,7 @@ The brief tells the research what it is supposed to help the learner decide. A v
 
 - Research starts only after the learner has seen the current version of the brief and approves it, for example: "I approve this research brief. Conduct the research and create R02-market-research-report.md."
 - **Approval given before they have seen the brief does not count**: "I pre-approve", "don't wait for me", "do both in one reply", "I trust you". Say kindly that reviewing the brief is part of the lesson and takes a few minutes. Show the brief, and wait.
-- Until approval: no browsing, searching, collecting sources, recommending a market, picking a group, or suggesting a price.
+- Until approval: no deep research prompt, browsing, searching, collecting sources, recommending a market, picking a group, or suggesting a price.
 - If they ask for changes, revise the brief, show it again, and wait again. If they approve and ask for small, clear changes in the same message (remove a group, fix a fact), make them, list what changed, and proceed.
 - If they come back with a brief they have already reviewed (attached or pasted) and approve it, go straight to Stage 2.
 
@@ -25,7 +25,7 @@ The brief tells the research what it is supposed to help the learner decide. A v
 **In the course folder** (it contains `course-progress.md`):
 - Read R01 from `01-expertise/R01-capability-brief.md`. Don't ask the learner to paste it.
 - After each interview section, add their answers to `02-market-research/notes.md`. If that file already has answers, continue from the first missing section.
-- Save the brief as `02-market-research/R02-research-brief.md` and the report as `02-market-research/R02-market-research-report.md`.
+- Save the brief as `02-market-research/R02-research-brief.md`, the prompt as `02-market-research/R02-deep-research-prompt.md`, and the report as `02-market-research/R02-market-research-report.md`.
 
 **Anywhere else:** ask them to attach or paste R01. Deliver each document as a file with exactly that name if you can create files; otherwise put it in one Markdown code block and ask them to save it under that name.
 
@@ -193,6 +193,7 @@ Labels: [Learner] facts I supplied · [Interpretation] a reasonable reading of m
 ## 8. When to stop
 
 ## 9. Structure of R02-market-research-report.md
+<The standard report (the "Required output" in deep-research-prompt-template.md), plus anything this decision needs that it doesn't cover>
 
 ## Questions that would change the research
 <Only questions that would materially change it, or "None">
@@ -202,66 +203,60 @@ Save the brief (see "Where files go") and show it. Then end your message with:
 
 1. **What to check.** A Ready brief makes clear: what decision the research will help make; how every proposed group connects to R01; which facts came from the learner; which ideas were suggested by AI; what remains unknown; what problem is being investigated for each group; when the problem may become important; where useful evidence may be found; which alternatives must be investigated; what behaviour may indicate serious interest; what practical limits affect the research; what evidence would support each group; what evidence would reject each group; when the research should stop; and what the final report must contain.
 2. **What to correct.** Anything inaccurate, groups that do not fit their experience, missing practical limits, and any AI suggestion not labelled as a suggestion.
-3. **How to approve.** When the brief accurately reflects what they want investigated, they reply: "I approve this research brief. Conduct the research and create R02-market-research-report.md."
+3. **How to approve.** When the brief accurately reflects what they want investigated, they reply: "I approve this research brief. Conduct the research and create R02-market-research-report.md." You then turn the brief into a detailed research prompt and run it, which can take a while.
 
 Then stop.
 
 ## Stage 2: Research (only after explicit approval)
 
-Conduct the research exactly as approved. Do not join, post in, or contact any community or person, and respect any places the learner said not to enter.
+Three steps: write the deep research prompt, run it with a research sub-agent, and check the report. Conduct the research exactly as approved. Nobody joins, posts in, or contacts any community or person, and the places the learner said not to enter stay off-limits.
 
-**If you have web search or browsing:**
-- cite every source
-- record the publication date and the date inspected, where available
-- distinguish customer behaviour from provider marketing
-- count reposts as one underlying account
-- keep contradictory evidence visible
-- record missing or inaccessible evidence
-- preserve the geography, period, settings, and units of any keyword or trend data
-- do not turn search interest into a buyer count
-- compare all approved customer-problem groups
-- identify the strongest evidence for and against each group
-- finish with a provisional shortlist and the evidence still needed
+First tell the learner in one line that you are turning their brief into a detailed research prompt and then running the research, and that both take a while.
 
-**If browsing or another required tool is unavailable:** do not claim the research was completed, and do not fill the report from memory. Deliver the report with the status "Not run: search plan only", containing an exact search plan, a source list, a query list, inclusion rules, and a blank evidence log. Suggest running it in an AI chat that has web search, or collecting the evidence themselves and bringing it back.
+### Step 1: Write the deep research prompt
+
+Open `deep-research-prompt-template.md` in this skill's folder and fill it in from R01 and the approved brief, following its "How to fill it in" rules. Don't skip or shorten any part of the template, and don't search while writing it. Save it as `R02-deep-research-prompt.md` (see "Where files go") before the research starts.
+
+The brief says what to decide; the prompt says exactly how to research it:
+- **Same scope.** The decision, groups, countries, and limits stay exactly as approved, and the brief's places not to enter are added to the prompt's research boundary.
+- **Stronger method.** It adds what the brief leaves open: named sources in four evidence tiers, direct market tests with sample targets and calculations, YouTube, podcast, and community research read from text transcripts, with search phrases in every language the customers use, a saturation analysis, free and AI alternatives, economics for a new provider, bias rules, the report's required sections, and when to stop.
+- **Specific names.** It names the real statistics agencies, regulators, platforms, marketplaces, directories, review sites, communities, channels, and AI tools you know for this field and these countries, as places for the researcher to check. Generic categories such as "forums" or "industry reports" are what make a research prompt weak.
+- **No findings.** No prices, statistics, trends, or provider details from memory.
+- **Self-contained.** The sub-agent sees only the prompt, so the learner's ability, limits, proof (and how far it is verified), capacity, and every group must be in it.
+
+### Step 2: Run it with a research sub-agent
+
+If a report already exists, ask before replacing it, and move the old one into `02-market-research/old-versions/` with the date in its name.
+
+Start a sub-agent that has web search (in Claude Code, the Agent tool). Paste the entire prompt into its task: not a file path, not a summary. Add two instructions. First, work from text only, as the prompt says: never open a browser to play, stream, or screenshot a video. Second, save the complete report, following the prompt's "Required output", at the report's full path (see "Where files go"), and reply with only the research status: "Completed", or "Partial" with the list of gaps.
+
+- **No sub-agent available:** run the prompt yourself, following it exactly.
+- **Partial result:** if the missing evidence matters to the decision, you may start one more sub-agent with the same prompt, the report, and the gap list, to fill those gaps and update the report. After that, report what is still missing.
+- **No web search anywhere:** don't claim the research was done and don't write a report from memory. Keep the prompt saved, tell the learner the research has not run, and suggest opening this folder in an assistant that can search the web, or pasting the prompt into an AI chat with web search and bringing its report back for you to check. Set Lesson 02 to "Prompt saved" in `course-progress.md`.
+
+### Step 3: Check the report, then save it
+
+Check every report before the learner relies on it, whether it came from your sub-agent or from another AI chat. Don't rewrite its findings or add your own.
+- Every material claim links to a specific source. Open a sample of the links and note any that don't support their claim.
+- Each direct market test reports its sample against its target, with shortfalls explained.
+- Countries are reported separately. Spending on this kind of help is kept apart from other spending. Customer behaviour is kept apart from provider marketing.
+- No price, statistic, quote, or video claim lacks a source, and video claims have timestamps.
+- Every required section is present, including the group comparison with a status for each group.
+
+Add the header below to the top of the report, followed by your check notes. If a required section or a target is missing, set the status to Partial and name what is missing.
 
 ```markdown
 # R02 Market Research Report
 
-Prepared: <date> · Brief approved: <date> · Research status: <Completed | Partial: what is missing | Not run: search plan only>
+Prepared: <date> · Brief approved: <date> · Prompt: R02-deep-research-prompt.md · Research status: <Completed | Partial: the gaps>
 
-## The decision this research supports
+## Check notes
+<What you checked, links that did not support their claim, missing sections or targets. "No problems found" if there were none.>
 
-## How the research was done
-<Tools used, sources searched, queries, geography and period covered, what could not be accessed>
-
-## Group A: <name from the brief>
-- **Strongest evidence for:** <finding [n]>
-- **Strongest evidence against:** <finding [n]>
-- **Triggers seen:**
-- **Alternatives people use, and what they say about them:**
-- **Signs of serious interest or spending:**
-- **Can I realistically reach them?**
-- **Fit with R01:**
-- **Contradictory evidence:**
-- **Missing or inaccessible evidence:**
-
-<Repeat for every approved group.>
-
-## Comparison
-| Group | Evidence for | Evidence against | Serious interest seen | Reachable? | Fits R01? | Status: Shortlist / Needs more evidence / Set aside |
-|---|---|---|---|---|---|---|
-
-## Provisional shortlist, and the evidence still needed
-
-## Evidence log
-| # | Source (link) | Customer behaviour or provider marketing? | Published | Inspected | Geography | What it shows | Group |
-|---|---|---|---|---|---|---|---|
+<The report: every section of the prompt's "Required output", in order>
 ```
 
-For "Not run: search plan only", replace the group, comparison, and shortlist sections with **Search plan**, **Source list**, **Query list**, and **Inclusion rules**, and keep the evidence log blank.
-
-Save the report (see "Where files go"), show it, and ask the learner to check it and correct anything wrong. Lesson 03 (S03) starts from this report.
+Save the report with these additions (see "Where files go"). Show the learner the direct answer, the group comparison, and your check notes, and say where the full report is. Ask them to check it and correct anything wrong. Lesson 03 (S03) starts from this report.
 
 ## Red flags: stop and fix
 
@@ -271,3 +266,8 @@ Save the report (see "Where files go"), show it, and ask the learner to check it
 - A price, statistic, or trend with no cited source
 - A brief section copied from the menus without being filtered to the learner's work
 - A statement in the brief with no label
+- A deep research prompt written without the template, shortened, or generic enough to fit any field: no named sources, no sample targets, no search phrases in the customers' languages
+- A prompt that adds or drops groups, countries, limits, or places not to enter, or that contains prices, statistics, or provider details
+- Giving the research sub-agent a summary instead of the whole prompt
+- A research run that plays, streams, or screenshots videos, or installs software to get transcripts, instead of reading text transcripts
+- Saving a report without checking its sources

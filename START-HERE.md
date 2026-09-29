@@ -24,7 +24,7 @@ If your assistant doesn't seem to know about the course, type: **Read AGENTS.md 
 ```text
 00-about-me/            your CV (optional)
 01-expertise/           R01-capability-brief.md
-02-market-research/     R02-research-brief.md, R02-market-research-report.md
+02-market-research/     R02-research-brief.md, R02-deep-research-prompt.md, R02-market-research-report.md
 03-competitors/         R03-competitor-analysis.md, screenshots/
 04-ideal-customer/      R04-ICP.md, screenshots/
 05-outcome/             R05-outcome-and-boundary-brief.md
@@ -40,7 +40,7 @@ Each lesson folder also has a `notes.md` with your raw answers and anything you 
 
 - **Answer honestly.** Rough notes and rambling are fine; your assistant organizes them. You can skip any question.
 - **Read every document your assistant writes, and correct anything that isn't accurate.** This is the most important step. Later lessons build on these files, so a wrong detail carries forward.
-- **Lesson 02 pauses on purpose.** Your assistant shows you a research brief and waits. Read it, correct it, then approve it by typing: *I approve this research brief. Conduct the research and create R02-market-research-report.md.*
+- **Lesson 02 pauses on purpose.** Your assistant shows you a research brief and waits. Read it, correct it, then approve it by typing: *I approve this research brief. Conduct the research and create R02-market-research-report.md.* Your assistant then turns the brief into a detailed research prompt and runs it, which can take a while.
 - **Lessons 03, 04 and 06 use your screenshots.** Save them into that lesson's `screenshots` folder, then tell your assistant they're there.
 - **Lesson 06 has numbers.** Your assistant shows every calculation. Check that the hours, costs and prices are yours. A price in your plan is something to try, not proof that anyone will buy.
 - **Lesson 07 has two parts.** First you plan a small test, and your file stays marked *test pending*. After you have actually shown your offer to real people, come back with your dated notes and your assistant adds the results.

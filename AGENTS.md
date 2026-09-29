@@ -11,7 +11,7 @@ Each lesson has one skill. Each skill saves a Markdown file (R01, R02, …) that
 | Lesson | Skill | Reads | Saves |
 |---|---|---|---|
 | 01 Analyze your own expertise | `s01-analyze-your-expertise` | CV in `00-about-me/` (optional) | `01-expertise/R01-capability-brief.md` |
-| 02 Prepare your market research | `s02-market-research` | R01 | `02-market-research/R02-research-brief.md`, then, only after the student approves the brief, `02-market-research/R02-market-research-report.md` |
+| 02 Prepare your market research | `s02-market-research` | R01 | `02-market-research/R02-research-brief.md`, then, only after the student approves the brief, `02-market-research/R02-deep-research-prompt.md` and `02-market-research/R02-market-research-report.md` |
 | 03 Competitor analysis | `s03-competitor-analysis` | R01, R02 report | `03-competitors/R03-competitor-analysis.md` |
 | 04 Ideal customer profile | `s04-ideal-customer-profile` | R01, R02 report, R03 | `04-ideal-customer/R04-ICP.md` |
 | 05 Define the outcome and your boundaries | `s05-outcome-and-boundaries` | R01, R04 | `05-outcome/R05-outcome-and-boundary-brief.md` |
@@ -36,6 +36,7 @@ The skills are in `.claude/skills/` (Claude Code) and `.agents/skills/` (Codex).
 ├── 02-market-research/
 │   ├── notes.md
 │   ├── R02-research-brief.md
+│   ├── R02-deep-research-prompt.md
 │   └── R02-market-research-report.md
 ├── 03-competitors/
 │   ├── notes.md
@@ -101,7 +102,7 @@ Course: Research, Ideation & Offer-Building Guide · Started: <date>
 | Lesson | Status | Files | Updated |
 |---|---|---|---|
 | 01 Analyze your own expertise | Not started | 01-expertise/R01-capability-brief.md | |
-| 02 Prepare your market research | Not started | 02-market-research/R02-research-brief.md, 02-market-research/R02-market-research-report.md | |
+| 02 Prepare your market research | Not started | 02-market-research/R02-research-brief.md, 02-market-research/R02-deep-research-prompt.md, 02-market-research/R02-market-research-report.md | |
 | 03 Competitor analysis | Not started | 03-competitors/R03-competitor-analysis.md | |
 | 04 Ideal customer profile | Not started | 04-ideal-customer/R04-ICP.md | |
 | 05 Define the outcome and your boundaries | Not started | 05-outcome/R05-outcome-and-boundary-brief.md | |
@@ -116,7 +117,7 @@ Course: Research, Ideation & Offer-Building Guide · Started: <date>
 <gaps marked Unknown in the R-files that the student may want to fill in later>
 ```
 
-Status values: Not started · In progress · Draft saved · Reviewed. For Lesson 02 also: Brief waiting for approval · Brief approved · Report saved. For Lesson 07 also: Test pending · Results added.
+Status values: Not started · In progress · Draft saved · Reviewed. For Lesson 02 also: Brief waiting for approval · Brief approved · Prompt saved · Report saved. For Lesson 07 also: Test pending · Results added.
 
 ## Course updates
 
